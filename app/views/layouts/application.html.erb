@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nicolas Troncoso</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Shadows+Into+Light" rel="stylesheet">
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sitio Web de Doctor Nicolas Troncoso">
+    <meta name="author" content="Jorge Romussi">
+    <meta name="google-site-verification" content="btFLvoIRFnsHGJXrVqfdwIKm2Dc60Bk0HhshZJW7h-g" />
+
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <%= render'layouts/navigation' %>
+    <%= yield %>
+    <%= render'layouts/footer' %>
+  </body>
+</html>
